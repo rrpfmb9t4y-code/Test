@@ -3,7 +3,7 @@
    Tokens & geometry derived from measured computed styles of the reference.
    =========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
   --bg:        #f7f7f4;   /* page background          rgb(247,247,244) */
@@ -33,7 +33,7 @@
   --pad:       20px;
   --header-h:  52px;
 
-  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
 }
 
@@ -204,12 +204,10 @@ a { color: inherit; text-decoration: none; }
               #8f9093 url('assets/landscape.png') center 42% / 175% no-repeat;
 }
 .feature-panel.p-tools {
-  background: linear-gradient(180deg, rgba(96,124,92,0.34), rgba(70,98,70,0.40)),
-              #7e9478 url('assets/landscape.png') center 60% / 200% no-repeat;
+  background: #8a9c84 url('assets/tools.png') center 42% / cover no-repeat;
 }
 .feature-panel.p-autocomplete {
-  background: linear-gradient(180deg, rgba(217,177,121,0.30), rgba(203,150,97,0.34)),
-              #c6ab82 url('assets/landscape.png') center 92% / cover no-repeat;
+  background: #c6ab82 url('assets/sunset.png') center 46% / cover no-repeat;
 }
 
 /* inner mock positioning within panels */
@@ -268,8 +266,7 @@ a { color: inherit; text-decoration: none; }
 .research-grid { display: grid; grid-template-columns: 0.82fr 1.7fr; background: var(--card); border-radius: 4px; overflow: hidden; min-height: 560px; }
 .research-copy { padding: 17.5px 40px; display: flex; flex-direction: column; justify-content: center; }
 .research-copy h3 { margin: 0 0 16px; font-size: 22px; line-height: 28.6px; letter-spacing: -0.11px; font-weight: 500; max-width: 360px; }
-.research-media { background: #4a5340 url('assets/landscape.png') center 50% / cover no-repeat; position: relative; }
-.research-media::after { content:""; position:absolute; inset:0; background: linear-gradient(120deg, rgba(40,50,40,.45), rgba(60,70,55,.15) 50%, rgba(200,170,150,.25)); }
+.research-media { background: #4a5340 url('assets/research.png') center 38% / cover no-repeat; position: relative; }
 
 /* --------------------------------------------------------- highlights --- */
 .highlights { padding: 60px 0; }
