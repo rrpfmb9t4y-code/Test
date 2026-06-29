@@ -6,10 +6,10 @@
 .blog { padding-top: 40px; }
 
 /* featured */
-.blog-featured { display: grid; grid-template-columns: 1.55fr 1fr; gap: 16px; margin-bottom: 36px; }
+.blog-featured { display: grid; grid-template-columns: 1.55fr 1fr; gap: 16px; margin-bottom: 56px; }
 .feat-big {
   background: var(--card); border-radius: 4px; padding: 20px; display: flex; flex-direction: column;
-  min-height: 470px;
+  min-height: 510px;
 }
 .feat-big .feat-art {
   flex: 1; border-radius: 6px; margin-bottom: 20px; position: relative; overflow: hidden;
@@ -48,7 +48,7 @@
 .fa-play { position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:42px; height:42px; border-radius:50%; background:rgba(255,255,255,.85); display:grid; place-items:center; color:#26251e; }
 
 /* newsletter */
-.newsletter { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; padding: 24px 0 40px; }
+.newsletter { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: center; padding: 40px 0 64px; }
 .newsletter .nl-label { font-size: 15px; color: var(--text); }
 .newsletter .nl-form { display: flex; align-items: center; border: 1px solid var(--border-2); border-radius: 8px; background: var(--card); padding: 0 4px 0 14px; }
 .newsletter input { flex: 1; border: none; background: transparent; padding: 12px 0; font-size: 14px; color: var(--text); outline: none; font-family: var(--font); }
@@ -65,8 +65,8 @@
 /* post table */
 .post-table { border-radius: 4px; overflow: hidden; }
 .post-row {
-  display: grid; grid-template-columns: 190px 1fr 200px 40px; gap: 20px; align-items: center;
-  padding: 14px 16px; font-size: 14.5px;
+  display: grid; grid-template-columns: 200px 1fr 200px 40px; gap: 20px; align-items: center;
+  padding: 16px 16px; font-size: 14.5px;
 }
 .post-row:nth-child(odd) { background: var(--card); }
 .post-row .pr-date { color: var(--muted-2); font-size: 13.5px; }
@@ -82,7 +82,7 @@
 .blog-quote .src a { color: var(--accent); }
 
 /* generic blog section */
-.blog-sec { padding: 18px 0 30px; }
+.blog-sec { padding: 36px 0 40px; }
 .blog-sec > h2 { font-size: 22px; line-height: 28.6px; letter-spacing: -0.11px; font-weight: 500; margin: 0 0 18px; }
 .blog-sec .more { margin-top: 18px; display: inline-block; }
 .grid-4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; }
@@ -91,7 +91,7 @@
 .story-card { background: var(--card); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; }
 .story-card .st-title { font-size: 14.5px; line-height: 1.35; margin-bottom: 6px; }
 .story-card .st-date { font-size: 13px; color: var(--muted-2); margin-bottom: 14px; }
-.story-card .st-logo { margin-top: auto; height: 110px; border-radius: 4px; background: #ecebe4; display: grid; place-items: center; font-weight: 700; font-size: 22px; color: #2a2924; letter-spacing: -0.02em; }
+.story-card .st-logo { margin-top: auto; height: 128px; border-radius: 4px; background: #ecebe4; display: grid; place-items: center; font-weight: 700; font-size: 22px; color: #2a2924; letter-spacing: -0.02em; }
 
 /* press cards */
 .press-card { background: var(--card); border-radius: 4px; padding: 16px; display: flex; flex-direction: column; min-height: 150px; }
@@ -102,7 +102,7 @@
 
 /* video cards */
 .video-card { display: flex; flex-direction: column; }
-.video-card .vc-thumb { height: 150px; border-radius: 4px; background: #dddcd4; margin-bottom: 12px; position: relative; overflow: hidden; }
+.video-card .vc-thumb { height: 168px; border-radius: 4px; background: #dddcd4; margin-bottom: 12px; position: relative; overflow: hidden; }
 .video-card .vc-title { font-size: 14.5px; line-height: 1.35; margin-bottom: 6px; }
 .video-card .vc-meta { font-size: 13px; color: var(--muted-2); margin-bottom: 10px; }
 .video-card .vc-link { font-size: 13.5px; color: var(--accent); }
