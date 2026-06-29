@@ -103,11 +103,11 @@ a { color: inherit; text-decoration: none; }
 
 .hero-visual {
   margin-top: 40px; height: 756px; border-radius: 8px; overflow: hidden; position: relative;
-  background: #aeb4ad url('assets/landscape.png') center 42% / cover no-repeat;
+  background: #b4b8ba url('assets/hero.png') center 46% / cover no-repeat;
 }
 .hero-visual::before {
   content: ""; position: absolute; inset: 0; z-index: 0;
-  background: linear-gradient(180deg, rgba(246,244,239,0.10), rgba(228,222,212,0.10));
+  background: linear-gradient(180deg, rgba(214,200,182,0.16), rgba(196,182,166,0.18));
 }
 
 /* shared window mockup -------------------------------------------------- */
@@ -152,8 +152,12 @@ a { color: inherit; text-decoration: none; }
 .chip { font-size: 10.5px; color: var(--muted); background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 3px 7px; }
 .send { margin-left: auto; width: 22px; height: 22px; border-radius: 50%; background: var(--text); color: #fff; display: grid; place-items: center; font-size: 11px; }
 
-.ide-editor { padding: 11px 14px; overflow: hidden; }
-.ide-tabs { display: flex; gap: 4px; font-size: 11px; margin-bottom: 9px; }
+.ide-editor { padding: 0; overflow: hidden; }
+.ide-tabs { display: flex; gap: 4px; font-size: 11px; padding: 8px 14px 0; }
+.edbar { display: flex; align-items: center; justify-content: space-between; padding: 6px 14px; font-size: 10.5px; color: var(--muted-2); border-bottom: 1px solid var(--border); }
+.edbar-right { display: flex; align-items: center; gap: 8px; }
+.edbar .build { background: #e0922f; color: #2a1c08; padding: 2px 8px; border-radius: 5px; font-weight: 600; }
+.ide-editor .doc { padding: 11px 14px; }
 .ide-tab { padding: 4px 9px; border-radius: 6px 6px 0 0; color: var(--muted-2); }
 .ide-tab.active { color: var(--text); background: var(--card); }
 .doc h4 { margin: 6px 0; font-size: 15px; font-weight: 600; }
