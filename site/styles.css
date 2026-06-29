@@ -159,11 +159,11 @@ section { position: relative; }
 /* ----------------------------------------------------------------- hero --- */
 .hero { padding-top: calc(var(--header-h) + 56px); }
 .hero h1 {
-  max-width: 540px;
+  max-width: 600px;
   margin: 0;
-  font-size: 40px;
-  line-height: 1.12;
-  letter-spacing: -0.022em;
+  font-size: 41px;
+  line-height: 1.1;
+  letter-spacing: -0.024em;
   font-weight: 550;
   color: var(--text-strong);
 }
@@ -179,14 +179,12 @@ section { position: relative; }
   border-radius: 14px;
   overflow: hidden;
   position: relative;
-  background:
-    radial-gradient(120% 90% at 30% 10%, rgba(232,224,208,0.55), transparent 60%),
-    linear-gradient(180deg, #cdd4d4 0%, #c3c9c6 22%, #b9bdb4 42%, #b3ad99 60%, #b8a98c 78%, #c9b59a 100%);
+  background: #b9bdb4 url('assets/landscape.png') center 38% / cover no-repeat;
 }
 .hero-visual::after {
   content: "";
   position: absolute; inset: 0;
-  background: radial-gradient(80% 60% at 50% 40%, transparent, rgba(120,112,96,0.18));
+  background: radial-gradient(80% 60% at 50% 40%, transparent, rgba(120,112,96,0.12));
   pointer-events: none;
 }
 
@@ -363,9 +361,10 @@ section { position: relative; }
 }
 .feature-visual.plain { background: var(--card); }
 .feature-visual.landscape {
-  background:
-    linear-gradient(180deg, #b9c2cf 0%, #c4c2b4 38%, #b7a585 64%, #9c8a63 100%);
+  background: #b9bdb4 url('assets/landscape.png') center 40% / cover no-repeat;
 }
+.feature-visual.landscape.low { background-position: center 78%; }
+.feature-visual.landscape.high { background-position: center 12%; }
 
 /* The relative-positioned inner mockups for feature visuals */
 .win-inset { position: absolute; left: 40px; top: 40px; right: -120px; bottom: -40px; }
