@@ -80,9 +80,9 @@ a { color: inherit; text-decoration: none; }
   height: var(--header-h);
   display: grid; grid-template-columns: auto 1fr auto; align-items: center;
 }
-.brand { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 16px; color: var(--text); }
-.brand .logo { width: 19px; height: 19px; display: block; }
-.brand b { font-weight: 500; letter-spacing: -0.01em; }
+.brand { display: inline-flex; align-items: center; gap: 8px; color: var(--text); }
+.brand .logo { width: 18px; height: 18px; display: block; }
+.brand b { font-weight: 600; font-size: 13px; letter-spacing: 0.13em; text-transform: uppercase; }
 
 .nav { display: flex; justify-content: center; gap: 4px; }
 .nav a { font-size: 14px; color: var(--text); padding: 5.6px 15px; border-radius: 999px; }
@@ -107,7 +107,7 @@ a { color: inherit; text-decoration: none; }
 }
 .hero-visual::before {
   content: ""; position: absolute; inset: 0; z-index: 0;
-  background: linear-gradient(180deg, rgba(246,244,239,0.18), rgba(228,222,212,0.22));
+  background: linear-gradient(180deg, rgba(246,244,239,0.10), rgba(228,222,212,0.10));
 }
 
 /* shared window mockup -------------------------------------------------- */
@@ -181,28 +181,36 @@ a { color: inherit; text-decoration: none; }
 .feature-card {
   position: relative; background: var(--card); border-radius: 4px;
   padding: 17.5px; margin-bottom: 90px; overflow: hidden;
-  display: grid; grid-template-columns: 0.92fr 1.83fr; gap: 0; align-items: stretch;
+  display: grid; grid-template-columns: 1fr 1.78fr; gap: 0; align-items: stretch;
   min-height: 715px;
 }
 .feature-card.short { min-height: 685px; }
 .feature-card:last-child { margin-bottom: 0; }
-.feature-card.reverse { grid-template-columns: 1.83fr 0.92fr; }
+.feature-card.reverse { grid-template-columns: 1.78fr 1fr; }
 
-.feature-copy { display: flex; flex-direction: column; justify-content: center; padding: 20px; max-width: 420px; }
+.feature-copy { display: flex; flex-direction: column; justify-content: center; padding: 20px; max-width: 440px; }
 .feature-card.reverse .feature-copy { order: 2; }
 .feature-copy h3 { margin: 0 0 0; font-size: 22px; line-height: 28.6px; letter-spacing: -0.11px; font-weight: 500; }
 .feature-copy p  { margin: 0 0 18px; font-size: 22px; line-height: 28.6px; letter-spacing: -0.11px; color: var(--muted); }
 
 .feature-panel { position: relative; border-radius: 8px; overflow: hidden; min-height: 100%; background: #c7c4ba; }
 .feature-card.reverse .feature-panel { order: 1; }
-.feature-panel.p-agents { background: #cdcabf url('assets/landscape.png') center 8% / 150% no-repeat; }
-.feature-panel.p-agents::before { content:""; position:absolute; inset:0; background: rgba(238,236,229,0.55); }
-.feature-panel.p-parallel { background: #b9bcc0 url('assets/landscape.png') center 70% / 170% no-repeat; }
-.feature-panel.p-parallel::before { content:""; position:absolute; inset:0; background: rgba(120,120,124,0.30); }
-.feature-panel.p-tools { background: #9fae9a url('assets/landscape.png') center 55% / cover no-repeat; }
-.feature-panel.p-tools::before { content:""; position:absolute; inset:0; background: rgba(232,230,222,0.18); }
-.feature-panel.p-autocomplete { background: #caa472 url('assets/landscape.png') center 92% / cover no-repeat; }
-.feature-panel.p-autocomplete::before { content:""; position:absolute; inset:0; background: rgba(236,231,222,0.20); }
+.feature-panel.p-agents {
+  background: linear-gradient(180deg, rgba(239,237,230,0.55), rgba(234,231,223,0.60)),
+              #d6d3c8 url('assets/landscape.png') center 6% / 200% no-repeat;
+}
+.feature-panel.p-parallel {
+  background: linear-gradient(160deg, rgba(153,154,157,0.86), rgba(126,127,130,0.92)),
+              #8f9093 url('assets/landscape.png') center 42% / 175% no-repeat;
+}
+.feature-panel.p-tools {
+  background: linear-gradient(180deg, rgba(96,124,92,0.34), rgba(70,98,70,0.40)),
+              #7e9478 url('assets/landscape.png') center 60% / 200% no-repeat;
+}
+.feature-panel.p-autocomplete {
+  background: linear-gradient(180deg, rgba(217,177,121,0.30), rgba(203,150,97,0.34)),
+              #c6ab82 url('assets/landscape.png') center 92% / cover no-repeat;
+}
 
 /* inner mock positioning within panels */
 .panel-win { position: absolute; }
