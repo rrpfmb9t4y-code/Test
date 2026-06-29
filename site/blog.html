@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog | Bursor</title>
+  <meta name="description" content="The latest from Bursor — product updates, research, and company news." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2.2 21 7v10l-9 4.8L3 17V7l9-4.8Z" fill="#26251e"/>
+          <path d="M12 2.2 21 7l-9 4.9L3 7l9-4.8Z" fill="#46453c"/>
+          <path d="M12 11.9 21 7v10l-9 4.8v-9.9Z" fill="#14140f"/>
+        </svg>
+        <b>Bursor</b>
+      </a>
+      <nav class="nav">
+        <a href="#">Product</a>
+        <a href="#">Enterprise</a>
+        <a href="#">Pricing</a>
+        <a href="#">Resources</a>
+      </nav>
+      <div class="header-actions">
+        <a class="signin" href="#">Sign in</a>
+        <a class="btn btn--soft btn--hdr" href="#">Contact sales</a>
+        <a class="btn btn--dark btn--hdr" href="#">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="blog">
+    <div class="container">
+
+      <!-- featured -->
+      <section class="blog-featured">
+        <article class="feat-big">
+          <div class="feat-art">
+            <div class="fa-modelmenu">
+              <div class="sel"><span>Builder 2.5</span><span>&#10003;</span></div>
+              <div><span>Opus 4.7</span></div>
+              <div><span>GPT-5.5</span></div>
+            </div>
+          </div>
+          <div class="feat-meta">May 18, 2026 · Research</div>
+          <h2>Introducing Builder 2.5</h2>
+          <p>A substantial improvement in intelligence and behavior over Builder 2, particularly on long-horizon agentic tasks.</p>
+          <div class="feat-foot"><span class="avatar" style="width:22px;height:22px;"></span> Bursor Team · 7 min read</div>
+        </article>
+
+        <div class="feat-col">
+          <article class="feat-small">
+            <div class="feat-art"><div class="fa-video"></div><div class="fa-play">&#9658;</div></div>
+            <div class="feat-meta">Apr 2, 2026 · Product</div>
+            <h3>Meet the new Bursor</h3>
+            <p>Bursor 3 is a unified workspace for building software with agents.</p>
+            <div class="feat-foot"><span class="avatar" style="width:20px;height:20px;"></span> Micah &amp; Suri · 10 min read</div>
+          </article>
+          <article class="feat-small">
+            <div class="feat-art" style="background:var(--chrome);">
+              <div class="fa-bar"><i></i><i></i><i></i></div>
+              <div class="fa-code" style="top:22px;">
+                <div><span class="ln">1</span><span class="kw">import</span> { Agent } <span class="kw">from</span> <span class="st">"@bursor/sdk"</span>;</div>
+                <div><span class="ln">2</span>&nbsp;</div>
+                <div><span class="ln">3</span><span class="kw">const</span> agent = Agent.<span class="fn">create</span>({</div>
+                <div><span class="ln">4</span>&nbsp;&nbsp;model: { id: <span class="st">"builder-2"</span> },</div>
+                <div><span class="ln">5</span>&nbsp;&nbsp;cloud: {</div>
+                <div><span class="ln">6</span>&nbsp;&nbsp;&nbsp;&nbsp;repos: [{ url: <span class="st">"github.com/bursor/cookbook"</span> }],</div>
+                <div><span class="ln">7</span>&nbsp;&nbsp;&nbsp;&nbsp;autoCreatePR: <span class="kw">true</span>,</div>
+              </div>
+            </div>
+            <div class="feat-meta">Apr 29, 2026 · Product</div>
+            <h3>Build programmatic agents with the Bursor SDK</h3>
+            <p>Launch, steer, and compose custom agents with the Bursor SDK.</p>
+            <div class="feat-foot"><span class="avatar" style="width:20px;height:20px;"></span> Rohan Sadik · 6 min read</div>
+          </article>
+        </div>
+      </section>
+
+      <!-- newsletter -->
+      <section class="newsletter">
+        <div class="nl-label">Subscribe to our newsletter for blog updates and original content</div>
+        <form class="nl-form" onsubmit="return false">
+          <input type="email" placeholder="Email address" />
+          <button type="submit">Subscribe &#8594;</button>
+        </form>
+      </section>
+
+      <!-- list -->
+      <section>
+        <div class="blog-controls">
+          <nav class="blog-tabs">
+            <a href="#" class="active">All</a><a href="#">Product</a><a href="#">Research</a><a href="#">Company</a><a href="#">Ideas</a>
+          </nav>
+          <div class="blog-search">&#9906; Search</div>
+        </div>
+        <div class="post-table">
+          <div class="post-row"><span class="pr-date">Jun 29, 2026 · Product</span><span class="pr-title">Build from anywhere with Bursor for iOS</span><span class="pr-author">Chris, Rikki &amp; Kevin</span><span class="pr-read">7m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 25, 2026 · Product</span><span class="pr-title">How Notial used the Bursor SDK to embed coding agents</span><span class="pr-author">Rohan Sadik</span><span class="pr-read">3m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 25, 2026 · Research</span><span class="pr-title">Reward hacking is swamping model intelligence gains</span><span class="pr-author">Naman Jain</span><span class="pr-read">7m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 11, 2026 · Research</span><span class="pr-title">Governing agent autonomy with Auto-review</span><span class="pr-author">David &amp; Travis</span><span class="pr-read">8m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 10, 2026 · Product</span><span class="pr-title">Bugbot is now over 3x faster, 22% cheaper, and finds 10% more bugs</span><span class="pr-author">Jason, Yuri &amp; Micah</span><span class="pr-read">4m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 5, 2026 · Product</span><span class="pr-title">Direct agents with visual prompts in Design Mode</span><span class="pr-author">Erik, Ian &amp; Ryo</span><span class="pr-read">6m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 3, 2026 · Product</span><span class="pr-title">Introducing organizations for Bursor Enterprise</span><span class="pr-author">Bursor Team</span><span class="pr-read">5m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 2, 2026 · Research</span><span class="pr-title">What we've learned building cloud agents</span><span class="pr-author">Josh Ma</span><span class="pr-read">9m</span></div>
+          <div class="post-row"><span class="pr-date">Jun 1, 2026 · Product</span><span class="pr-title">Improvements to Teams Pricing</span><span class="pr-author">Bursor Team</span><span class="pr-read">4m</span></div>
+          <div class="post-row"><span class="pr-date">May 22, 2026 · Company</span><span class="pr-title">Bursor named a Leader in the 2026 Gartner&reg; Magic Quadrant&trade; for Enterprise AI Coding Agents</span><span class="pr-author">Bursor Team</span><span class="pr-read">3m</span></div>
+          <div class="post-row"><span class="pr-date">May 18, 2026 · Research</span><span class="pr-title">Introducing Builder 2.5</span><span class="pr-author">Bursor Team</span><span class="pr-read">7m</span></div>
+          <div class="post-row"><span class="pr-date">May 13, 2026 · Product</span><span class="pr-title">Development environments for your cloud agents</span><span class="pr-author">Samantha, David &amp; Nick</span><span class="pr-read">7m</span></div>
+        </div>
+        <div class="post-more">View more &#8595;</div>
+      </section>
+
+      <!-- quote -->
+      <section class="blog-quote">
+        <h2>"We're building toward a future of self-driving codebases, where agents merge PRs, manage rollouts, and monitor production."</h2>
+        <div class="src">From "Towards self-driving codebases" <a href="#">Read more &#8594;</a></div>
+      </section>
+
+      <!-- customer stories -->
+      <section class="blog-sec">
+        <h2>Customer stories</h2>
+        <div class="grid-4">
+          <article class="story-card"><div class="st-title">Coinflow reduces time from idea to production by 90% with Bursor</div><div class="st-date">Jun 23, 2026</div><div class="st-logo">coinflow</div></article>
+          <article class="story-card"><div class="st-title">How Wayford cut ML model costs by 90% (twice!) with Bursor</div><div class="st-date">Jun 15, 2026</div><div class="st-logo">wayford</div></article>
+          <article class="story-card"><div class="st-title">Faire doubles PR throughput with Bursor Cloud Agents</div><div class="st-date">May 26, 2026</div><div class="st-logo">FARO</div></article>
+          <article class="story-card"><div class="st-title">Beyond efficiency: PayPath expands what's possible to build with AI</div><div class="st-date">May 11, 2026</div><div class="st-logo">PayPath</div></article>
+        </div>
+        <a class="link-accent more" href="#">View all stories &#8594;</a>
+      </section>
+
+      <!-- press -->
+      <section class="blog-sec">
+        <h2>Press</h2>
+        <div class="grid-4">
+          <article class="press-card"><div class="ps-title">Bursor built a fleet of security agents to solve a familiar frustration</div><div class="ps-date">Mar 16, 2026</div><a class="ps-link" href="#">Read on The New Stack &#8599;</a></article>
+          <article class="press-card"><div class="ps-title">Bursor is rolling out a new kind of agentic coding tool</div><div class="ps-date">Mar 5, 2026</div><a class="ps-link" href="#">Read on TechCrunch &#8599;</a></article>
+          <article class="press-card"><div class="ps-title">Bursor Recurring Revenue Doubles in Three Months to $2 Billion</div><div class="ps-date">Mar 2, 2026</div><a class="ps-link" href="#">Read on Bloomberg &#8599;</a></article>
+          <article class="press-card"><div class="ps-title">Bursor announces major update to AI agents as coding tool battle heats up</div><div class="ps-date">Feb 24, 2026</div><a class="ps-link" href="#">Read on CNBC &#8599;</a></article>
+        </div>
+        <a class="link-accent more" href="#">View all press &#8594;</a>
+      </section>
+
+      <!-- videos -->
+      <section class="blog-sec">
+        <h2>Videos</h2>
+        <div class="grid-4">
+          <article class="video-card"><div class="vc-thumb"></div><div class="vc-title">Bursor now shows you demos, not diffs</div><div class="vc-meta">4 months ago · 1:43</div><a class="vc-link" href="#">Watch on YouTube &#8599;</a></article>
+          <article class="video-card"><div class="vc-thumb"></div><div class="vc-title">Jordan Schultz on dead ends, scaling RL, and building research institutions</div><div class="vc-meta">6 months ago · 51:26</div><a class="vc-link" href="#">Watch on YouTube &#8599;</a></article>
+          <article class="video-card"><div class="vc-thumb"></div><div class="vc-title">Our designer built an operating system with Bursor</div><div class="vc-meta">11 months ago · 50:15</div><a class="vc-link" href="#">Watch on YouTube &#8599;</a></article>
+          <article class="video-card"><div class="vc-thumb"></div><div class="vc-title">AI Foundations: Introduction</div><div class="vc-meta">9 months ago · 4:03</div><a class="vc-link" href="#">Watch on YouTube &#8599;</a></article>
+        </div>
+        <a class="link-accent more" href="#">Visit our YouTube channel &#8599;</a>
+      </section>
+
+      <!-- changelog -->
+      <section class="blog-sec">
+        <h2>Changelog</h2>
+        <div class="changelog-grid">
+          <div class="cl-card"><div class="top"><span class="date">Jun 29, 2026</span></div><div class="title">Bursor Mobile App for iOS</div></div>
+          <div class="cl-card"><div class="top"><span class="ver">3.9</span><span class="date">Jun 22, 2026</span></div><div class="title">Customize Bursor</div></div>
+          <div class="cl-card"><div class="top"><span class="ver">3.8</span><span class="date">Jun 18, 2026</span></div><div class="title">Improvements to Bursor Automations</div></div>
+          <div class="cl-card"><div class="top"><span class="ver">3.7</span><span class="date">Jun 17, 2026</span></div><div class="title">Cloud Environment Setup and Cloud Subagents in Agents Window</div></div>
+        </div>
+        <a class="link-accent more" href="#">See what's new in Bursor &#8594;</a>
+      </section>
+    </div>
+
+    <!-- CTA -->
+    <section class="trynow">
+      <div class="container">
+        <h2>Get started with Bursor.</h2>
+        <div class="actions">
+          <a class="btn btn--dark" href="#">Download <span class="arrow">&#8595;</span></a>
+          <a class="btn btn--soft" href="#">Contact Sales <span class="arrow">&#8594;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col"><h5>Product</h5><a href="#">Agents</a><a href="#">Teams</a><a href="#">Enterprise</a><a href="#">Pricing</a><a href="#">Code Review</a><a href="#">Tab</a><a href="#">CLI</a><a href="#">Cloud Agents</a><a href="#">Marketplace &#8599;</a></div>
+        <div class="footer-col"><h5>Resources</h5><a href="#">Download</a><a href="blog.html">Changelog</a><a href="docs.html">Docs</a><a href="#">Learn &#8599;</a><a href="#">Forum &#8599;</a><a href="#">Help &#8599;</a><a href="#">Workshops</a><a href="#">Status &#8599;</a></div>
+        <div class="footer-col"><h5>Company</h5><a href="#">Careers</a><a href="blog.html">Blog</a><a href="#">Community</a><a href="#">Students</a><a href="#">Brand</a><a href="#">Future</a><a href="#">Bursphere &#8599;</a></div>
+        <div class="footer-col"><h5>Legal</h5><a href="#">Terms of Service</a><a href="#">Privacy Policy</a><a href="#">Data Use</a><a href="#">Security</a></div>
+        <div class="footer-col"><h5>Connect</h5><a href="#">X &#8599;</a><a href="#">LinkedIn &#8599;</a><a href="#">YouTube &#8599;</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bursphere, Inc.</span><span>&#9737; SOC 2 Certified</span>
+        <span class="spacer"></span>
+        <span class="seg"><i>&#9707;</i><i>&#9728;</i><i>&#9789;</i></span>
+        <span class="lang">&#127760; English &#9662;</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

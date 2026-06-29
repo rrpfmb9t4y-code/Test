@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bursor Documentation</title>
+  <meta name="description" content="Bursor is a coding agent for building ambitious software." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+  <header class="docs-header">
+    <div class="docs-header-inner">
+      <a class="brand" href="index.html">
+        <svg class="logo" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2.2 21 7v10l-9 4.8L3 17V7l9-4.8Z" fill="#26251e"/>
+          <path d="M12 2.2 21 7l-9 4.9L3 7l9-4.8Z" fill="#46453c"/>
+          <path d="M12 11.9 21 7v10l-9 4.8v-9.9Z" fill="#14140f"/>
+        </svg>
+        <b>Bursor</b>
+      </a>
+      <nav class="docs-nav">
+        <a href="docs.html" class="active">Docs</a>
+        <a href="#">API</a>
+        <a href="#">Learn</a>
+        <a href="#">Help</a>
+      </nav>
+      <div class="docs-search">&#9906; Search docs<span class="kbd">&#8984;K</span></div>
+      <div class="docs-head-actions">
+        <span class="docs-askai">&#10024; Ask AI <span class="kbd" style="margin-left:2px;">&#8984;I</span></span>
+        <a class="signin" href="#">Sign in</a>
+        <a class="btn btn--dark btn--hdr" href="#">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+
+    <!-- sidebar -->
+    <aside class="docs-sidebar">
+      <div class="docs-group">
+        <div class="dg-title">Get Started</div>
+        <a href="#" class="active">Welcome</a>
+        <a href="#">Quickstart</a>
+        <a href="#">Models &amp; Pricing <span class="chev">&#8250;</span></a>
+        <a href="#">Changelog</a>
+      </div>
+      <div class="docs-group">
+        <div class="dg-title">Agent</div>
+        <a href="#">Overview</a>
+        <a href="#">Agents Window</a>
+        <a href="#">Agent Review</a>
+        <a href="#">Planning</a>
+        <a href="#">Prompting</a>
+        <a href="#">Debugging</a>
+        <a href="#">Design Mode</a>
+        <a href="#">Tools <span class="chev">&#8250;</span></a>
+        <a href="#">Security <span class="chev">&#8250;</span></a>
+      </div>
+      <div class="docs-group">
+        <div class="dg-title">Customize</div>
+        <a href="#">Overview</a>
+        <a href="#">Plugins</a>
+        <a href="#">Rules</a>
+        <a href="#">Skills</a>
+        <a href="#">Subagents</a>
+        <a href="#">Hooks</a>
+        <a href="#">MCP</a>
+      </div>
+      <div class="docs-group">
+        <div class="dg-title">Cloud Agents</div>
+        <a href="#">Overview</a>
+        <a href="#">Setup</a>
+        <a href="#">Web &amp; Mobile</a>
+        <a href="#">Slack</a>
+      </div>
+    </aside>
+
+    <!-- main -->
+    <main class="docs-main">
+      <div class="docs-kicker">Get Started</div>
+      <h1>Bursor Documentation</h1>
+      <p class="lead">Bursor is a coding agent for building ambitious software. Use it to understand your codebase, plan and build features, fix bugs, review changes, and work with the tools you already use.</p>
+
+      <div class="docs-hero">
+        <div class="win">
+          <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Bursor</span></div>
+          <div class="ide" style="grid-template-columns:200px 1fr 1fr;">
+            <div class="ide-side">
+              <div class="ide-group">New Agent</div>
+              <div class="ide-task"><span class="ic">&#9696;</span><span class="tt">Compose ghost text</span></div>
+              <div class="ide-group">Sidebar</div>
+              <div class="ide-task"><span class="ic">&#9633;</span><span class="tt">Agentic chat</span></div>
+              <div class="ide-task"><span class="ic">&#9633;</span><span class="tt">Command palette</span></div>
+              <div class="ide-task"><span class="ic">&#9633;</span><span class="tt">Toast notification</span></div>
+            </div>
+            <div class="ide-plan">
+              <div class="ide-bubble">Rewrite the ghost text pipeline to reduce suggestion latency, add multi-line preview, and handle cancellation when the user keeps typing.</div>
+              <div class="ide-steps"><span><b>Searched</b> ghost text render path</span><span>On it. I'll profile the current pipeline.</span><span style="color:var(--muted-2)">Processed screen recording</span></div>
+              <div style="margin-top:10px;height:90px;border-radius:8px;background:#aab1b8 url('assets/hero.png') center 55% / cover;"></div>
+              <div class="ide-steps" style="margin-top:8px;"><span><b>Summary</b></span><span>Ghost text pipeline rewritten with 40% lower latency.</span></div>
+            </div>
+            <div class="ide-editor">
+              <pre style="margin:0;padding:10px 12px;font-family:var(--mono);font-size:10.5px;line-height:1.55;color:var(--text);"><span style="color:var(--code-kw)">return</span> useMemo(() =&gt; {
+  <span style="color:var(--code-kw)">if</span> (!isPrimed) {
+    <span style="color:var(--code-kw)">return</span> { iconSize: <span style="color:var(--code-fn)">isCompact</span> ? 14 : 18 };
+  }
+  <span style="color:var(--code-kw)">const</span> primedIconSize = isCompact ? 14 : 18;
+  <span style="color:var(--code-kw)">const</span> lineSize = isCompact ? 20 : 24;
+  <span style="color:var(--code-kw)">return</span> { iconSize: primedIconSize };
+}, [isPrimed, isCompact]);</pre>
+            </div>
+          </div>
+        </div>
+        <div class="play">&#9658;</div>
+      </div>
+
+      <h2 id="start">Start here</h2>
+      <div class="docs-cards">
+        <a class="docs-card" href="#"><div class="dc-ico">&#128640;</div><div class="dc-title">Get started</div><div class="dc-desc">Install Bursor and ship your first change in minutes.</div></a>
+        <a class="docs-card" href="#"><div class="dc-ico">&#128176;</div><div class="dc-title">Models &amp; Pricing</div><div class="dc-desc">Choose the right model and plan for your team.</div></a>
+        <a class="docs-card" href="blog.html"><div class="dc-ico">&#128221;</div><div class="dc-title">Changelog</div><div class="dc-desc">See the latest features and improvements.</div></a>
+      </div>
+
+      <h2 id="what">What you can do with Bursor</h2>
+      <p>Bursor brings agents into every part of your workflow. Hand off a task and let an agent plan, edit, and test across your codebase — or stay in the loop with inline edits and Tab completions.</p>
+      <ul class="docs-list">
+        <li><a href="#">Agents</a> — delegate multi-step tasks that run end to end.</li>
+        <li><a href="#">Tab</a> — magically accurate autocomplete that predicts your next edit.</li>
+        <li><a href="#">Cloud Agents</a> — run agents on their own machines, in parallel.</li>
+        <li><a href="#">Code Review</a> — let Bursor review PRs and catch bugs before you merge.</li>
+        <li><a href="#">CLI</a> — drive Bursor from your terminal and CI.</li>
+      </ul>
+
+      <h2 id="models">Models</h2>
+      <p>Bursor supports every frontier model. Switch between Builder 2.5, Opus 4.8, GPT-5.5, Gemia 3.1 Pro, and Grok 4.3, or let Bursor pick the best model for each task automatically.</p>
+      <p>Learn more about <a class="inline" href="#">model selection &#8594;</a></p>
+
+      <h2 id="more">More resources</h2>
+      <ul class="docs-list">
+        <li><a href="#">Quickstart</a> — set up your editor and preferences.</li>
+        <li><a href="#">Rules</a> — teach Bursor your conventions.</li>
+        <li><a href="#">MCP</a> — connect external tools and context.</li>
+        <li><a href="#">Security</a> — privacy mode, data controls, and SOC 2.</li>
+      </ul>
+    </main>
+
+    <!-- toc -->
+    <aside class="docs-toc">
+      <div class="toc-title">On this page</div>
+      <a href="#start" class="active">Start here</a>
+      <a href="#what">What you can do with Bursor</a>
+      <a href="#models">Models</a>
+      <a href="#more">More resources</a>
+      <div class="toc-sep"></div>
+      <div class="toc-act">&#9783; Copy page</div>
+      <div class="toc-act">&#9993; Share feedback</div>
+      <div class="toc-act">&#10024; Explain more</div>
+    </aside>
+  </div>
+
+</body>
+</html>
