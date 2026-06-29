@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bursor: AI coding agent</title>
+  <meta name="description" content="Bursor is your coding agent for building ambitious software." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">
+        <svg class="logo" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 2.2 21 7v10l-9 4.8L3 17V7l9-4.8Z" fill="#1d1d1b"/>
+          <path d="M12 2.2 21 7l-9 4.9L3 7l9-4.8Z" fill="#3a3a36"/>
+          <path d="M12 11.9 21 7v10l-9 4.8v-9.9Z" fill="#101010"/>
+        </svg>
+        Bursor
+      </a>
+
+      <nav class="nav">
+        <a href="#">Product</a>
+        <a href="#">Enterprise</a>
+        <a href="#">Pricing</a>
+        <a href="#">Resources</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="signin" href="#">Sign in</a>
+        <a class="btn btn--ghost btn--sm" href="#">Contact sales</a>
+        <a class="btn btn--dark btn--sm" href="#">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="container">
+        <h1>Bursor is your coding agent for building ambitious software.</h1>
+        <div class="hero-actions">
+          <a class="btn btn--dark btn--lg" href="#">Download for Linux <span class="arrow">&#8595;</span></a>
+          <a class="btn btn--soft btn--lg" href="#">Request a demo <span class="arrow">&#8594;</span></a>
+        </div>
+
+        <div class="hero-visual">
+          <!-- Desktop IDE window -->
+          <div class="win win-desktop">
+            <div class="win-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="win-title">Bursor Desktop</span>
+            </div>
+            <div class="ide">
+              <div class="ide-side">
+                <div class="ide-group">In progress 2</div>
+                <div class="ide-task"><span class="ic">&#9696;</span><span><span class="tt">Analyze Tab vs Agent Usage…</span><br><span class="ts">Fetching data</span></span></div>
+                <div class="ide-task active"><span class="ic">&#9696;</span><span><span class="tt">Plan Mission Control</span><br><span class="ts">Generating plan</span></span></div>
+                <div class="ide-group">Ready for review 4</div>
+                <div class="ide-task"><span class="ic">&#10003;</span><span><span class="tt">Build Landing Page</span><br><span class="ts">Done. Fonts preload in the hea…</span></span><span class="meta">now</span></div>
+                <div class="ide-task"><span class="ic">&#10003;</span><span><span class="tt">PyTorch MNIST Experi…</span><br><span class="ts">PyTorch MNIST Experiments</span></span><span class="meta">10m</span></div>
+                <div class="ide-task"><span class="ic">&#10003;</span><span><span class="tt">Set up Bursor Rules fo…</span><br><span class="ts">Set up Bursor Rules for Dashb…</span></span><span class="meta">30m</span></div>
+                <div class="ide-task"><span class="ic">&#10003;</span><span><span class="tt">Bioinformatics Tools</span><br><span class="ts"><span class="add">+135</span> <span class="del">-21</span> · Bioinformatics Tools</span></span><span class="meta">45m</span></div>
+              </div>
+
+              <div class="ide-main">
+                <div class="ide-plan">
+                  <div class="crumb">Plan Mission Control</div>
+                  <div class="ide-bubble">let's build a mission control interface, similar to the expose-style window manager on macOS</div>
+                  <div class="ide-steps">
+                    <span>Thought <span style="color:var(--muted-2)">4s</span></span>
+                    <span><b>Read</b> AppManager.tsx</span>
+                    <span><b>Searched</b> expose patterns</span>
+                  </div>
+                  <div class="ide-prompt">
+                    <div class="ph">Plan, search, build anything…</div>
+                    <div class="row">
+                      <span class="chip">&#9776; Plan &#9662;</span>
+                      <span class="chip">Builder 2.5 &#9662;</span>
+                      <span class="send">&#8593;</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="ide-editor">
+                  <div class="ide-tabs">
+                    <span class="ide-tab active">feature-prd.md &times;</span>
+                    <span class="ide-tab">presence.ts</span>
+                  </div>
+                  <div class="doc">
+                    <h4>Mission Control Interface</h4>
+                    <p>A grid view of all open windows as scaled previews, allowing quick selection to bring any window to front.</p>
+                    <h5>Trigger</h5>
+                    <p>Menu item in MenuBar.tsx (View &gt; Mission Control), hotkey F3, or double-tap desktop.</p>
+                    <h5>View Behavior</h5>
+                    <p>Overlay existing windows into a grid of live previews with spring-based layout animations.</p>
+                    <h5>3 Tasks</h5>
+                    <div class="tasklist">
+                      <div><span class="o"></span> Add multiplayer mode to useAppStore.ts</div>
+                      <div><span class="o"></span> Create a new MissionControlView.tsx component</div>
+                      <div><span class="o"></span> Update AppManager.tsx to apply expose modes.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CLI floating window -->
+          <div class="win win-cli">
+            <div class="win-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="win-title">Bursor CLI</span>
+            </div>
+            <div class="cli-body">
+              <div>Time to stitch everything together with a report helper that combines the key metrics:</div>
+              <span class="code-pill">report.py <span style="color:var(--green)">+40</span> <span style="color:var(--accent)">-0</span></span>
+              <div>I'll add tests to lock in the behaviour using a representative sample from last week's export:</div>
+              <span class="code-pill">test_usage.py <span style="color:var(--green)">+90</span></span>
+              <div class="cli-input">&#8594; Add a follow-up</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ LOGOS ============================ -->
+    <section class="logos">
+      <div class="container">
+        <div class="label">Trusted every day by teams that build world-class software</div>
+        <div class="logos-grid">
+          <div class="logo-cell">strial</div>
+          <div class="logo-cell">OpenML</div>
+          <div class="logo-cell">Linea</div>
+          <div class="logo-cell">Datapup</div>
+          <div class="logo-cell">INVDA</div>
+          <div class="logo-cell">Figment</div>
+          <div class="logo-cell">rampt</div>
+          <div class="logo-cell">Adomo</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FEATURE: agents ======================= -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <h3>Agents turn ideas into code</h3>
+            <p>Accelerate development by handing off tasks to Bursor, while you focus on making decisions.</p>
+            <a class="link-accent" href="#">Learn about agentic development <span class="arrow">&#8594;</span></a>
+          </div>
+          <div class="feature-visual">
+            <div class="win win-inset">
+              <div class="win-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="win-title">Bursor</span>
+              </div>
+              <div class="ide" style="grid-template-columns: 220px 1fr;">
+                <div class="ide-plan">
+                  <div class="crumb">Plan Mission Control</div>
+                  <div class="ide-bubble">let's build a mission control interface, similar to the expose-style window manager on macOS</div>
+                  <div class="ide-steps">
+                    <span>Thought 4s</span>
+                    <span><b>Read</b> AppManager.tsx</span>
+                    <span><b>Searched</b> expose patterns</span>
+                    <span class="chip" style="display:inline-block;margin-top:4px;">&#128196; feature-prd.md <span class="add">+68</span></span>
+                  </div>
+                  <div class="ide-prompt" style="margin-top:14px;">
+                    <div class="ph">Questions</div>
+                    <div style="font-size:11.5px;color:var(--text);margin-top:8px;">How should Mission Control be triggered?</div>
+                    <div class="ide-steps" style="margin-top:8px;">
+                      <span>1 &nbsp;Gesture (swipe up with 3 fingers)</span>
+                      <span>2 &nbsp;Keyboard shortcut (e.g., F3 or Cmd+F3)</span>
+                      <span>3 &nbsp;Both keyboard and button</span>
+                    </div>
+                    <div class="row" style="justify-content:flex-end;gap:10px;">
+                      <span style="color:var(--muted);font-size:11.5px;">Skip</span>
+                      <span class="btn btn--dark btn--sm" style="background:var(--accent);">Continue</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="ide-editor">
+                  <div class="doc">
+                    <h4>Mission Control Interface</h4>
+                    <p>A grid view of all open windows as scaled previews, allowing quick selection to bring any window to front.</p>
+                    <h5>Trigger</h5>
+                    <p>Menu item in MenuBar.tsx (View &gt; Mission Control), hotkey F3, or double-tap desktop.</p>
+                    <h5>View Behavior</h5>
+                    <p>Overlay existing windows into a grid of live previews with spring-based layout animations.</p>
+                    <h5>3 Tasks</h5>
+                    <div class="tasklist">
+                      <div><span class="o"></span> Add multiplayer mode to useAppStore.ts</div>
+                      <div><span class="o"></span> Create a new MissionControlView.tsx component</div>
+                      <div><span class="o"></span> Update AppManager.tsx to apply expose modes.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURE: parallel ====================== -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-grid reverse">
+          <div class="feature-copy">
+            <h3>Works autonomously, runs in parallel</h3>
+            <p>Agents use their own computers to build, test, and demo features end to end for you to review.</p>
+            <a class="link-accent" href="#">Learn about cloud agents <span class="arrow">&#8594;</span></a>
+          </div>
+          <div class="feature-visual landscape">
+            <div class="win win-inset">
+              <div class="win-bar">
+                <span class="dots"><i></i><i></i><i></i></span>
+                <span class="url-pill">bursor.com/agent</span>
+              </div>
+              <div class="ide" style="grid-template-columns: 170px 1fr;">
+                <div class="ide-side">
+                  <div class="ide-group">This Week</div>
+                  <div class="ide-task active"><span class="ic">&#9696;</span><span class="tt">Acme Research Dashboard</span></div>
+                  <div class="ide-task"><span class="ic">&#9696;</span><span class="tt">Live Telemetry Pipeline</span></div>
+                  <div class="ide-task"><span class="ic">&#9696;</span><span class="tt">Zero-Downtime Deploys</span></div>
+                  <div class="ide-group">This Month</div>
+                  <div class="ide-task"><span class="ic">&#9696;</span><span class="tt">Binary Protocol Parser</span></div>
+                  <div class="ide-task"><span class="ic">&#9696;</span><span class="tt">Edge Cache Invalidation</span></div>
+                  <div class="ide-task"><span class="ic">&#9696;</span><span class="tt">Auth Token Rotation</span></div>
+                </div>
+                <div class="ide-plan" style="border-right:none;">
+                  <div class="crumb">Acme Research Dashboard</div>
+                  <div class="ide-bubble">let's build a dashboard to make our research findings interactive</div>
+                  <div class="ide-steps">
+                    <span>On it. I'll build the dashboard using your theme config, wire up the research data, and add interactive charts with public access controls.</span>
+                    <span style="color:var(--muted-2)">Worked for 14m 22s</span>
+                    <span style="color:var(--muted-2)">Processed screen recording</span>
+                    <span><b>Done!</b> Here's a walkthrough of the dashboard.</span>
+                  </div>
+                  <div style="margin-top:10px;height:120px;border-radius:8px;background:linear-gradient(160deg,#aeb8c4,#b6a98c);"></div>
+                  <div class="ide-steps" style="margin-top:10px;">
+                    <span><b>Summary</b></span>
+                    <span>Built the interactive dashboard with realtime charts, data from Snowfork, and shadcn components. Deployed to staging via Vercil.</span>
+                  </div>
+                  <div class="ide-prompt">
+                    <div class="ph">Add a follow up…</div>
+                    <div class="row"><span class="chip">&#8734; Agent &#9662;</span><span class="chip">Opus 4.8 &#9662;</span><span class="send">&#8593;</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== FEATURE: tools ======================== -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-copy">
+            <h3>In every tool, at every step</h3>
+            <p>Bursor runs in your terminal, collaborates in Slack, and reviews PRs in GitHub.</p>
+            <div class="code-pill" style="font-size:12px;padding:8px 12px;">curl https://bursor.com/install -fsS | b</div>
+          </div>
+          <div class="feature-visual landscape">
+            <div class="win win-inset" style="left:60px;top:30px;right:-150px;">
+              <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Slack</span></div>
+              <div style="padding:12px 14px;font-size:12px;">
+                <div style="font-weight:700;font-size:14px;">#feature-realtime-sync</div>
+                <div style="color:var(--muted-2);font-size:11px;margin-bottom:12px;">8 members</div>
+                <div style="margin-bottom:8px;"><b>swhitmore</b> <span style="color:var(--muted-2)">5m</span><br>i wanna be able to go to bursor.com/changelog#1.0 to see 1.0 changelog</div>
+                <div style="margin-bottom:8px;"><b>eric</b> <span style="color:var(--muted-2)">4m</span><br>checks out</div>
+                <div><b>Bursor</b> <span class="chip">APP</span><br>I added directory constraints</div>
+                <div class="btn btn--dark btn--sm" style="background:var(--green);margin-top:8px;">View PR</div>
+              </div>
+            </div>
+            <div class="win win-cli" style="position:absolute;right:-130px;bottom:20px;left:auto;top:auto;width:430px;height:300px;">
+              <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">bursor-agent</span></div>
+              <div class="cli-body">
+                <div>plan mission control interface</div>
+                <div class="muted">&#9679; Thought 3s</div>
+                <div class="muted">&#9679; Read 3 files, 1 search 1s</div>
+                <div class="muted">&#9679; Planned 2s</div>
+                <div class="muted">&#9679; Read 2 files, 1 directory 1s</div>
+                <div style="margin-top:8px;border:1px solid var(--border);border-radius:8px;padding:8px 10px;">
+                  <div>Question</div>
+                  <div>What data should the mission control display?</div>
+                  <div style="margin-top:6px;">&nbsp;&nbsp;[ ] Real-time metrics</div>
+                  <div>&gt; [ ] System status</div>
+                </div>
+                <div class="cli-input">&#8594; Add a follow-up<span style="float:right;">esc to stop</span></div>
+                <div style="color:var(--green);margin-top:6px;">&#42; Plan (shift+tab to cycle)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FEATURE: autocomplete ==================== -->
+    <section class="feature">
+      <div class="container">
+        <div class="feature-grid reverse">
+          <div class="feature-copy">
+            <h3>Magically accurate autocomplete</h3>
+            <p>Our specialized Tab model predicts your next action with striking speed and precision.</p>
+            <a class="link-accent" href="#">Learn about Tab <span class="arrow">&#8594;</span></a>
+          </div>
+          <div class="feature-visual landscape">
+            <div class="win win-inset" style="left:50px;top:30px;right:50px;bottom:-30px;">
+              <div class="win-bar"><span class="dots"><i></i><i></i><i></i></span><span class="win-title">Bursor</span></div>
+              <div class="ide-tabs" style="padding:8px 12px 0;">
+                <span class="ide-tab active">Dashboard.tsx &times;</span>
+                <span class="ide-tab">SupportChat.tsx</span>
+              </div>
+              <pre style="margin:0;padding:6px 16px;font-family:var(--mono);font-size:11.5px;line-height:1.55;color:var(--text);"><span style="color:var(--code-str)">"use client"</span>;
+
+<span style="color:var(--code-kw)">import</span> React, { useState } <span style="color:var(--code-kw)">from</span> <span style="color:var(--code-str)">"react"</span>;
+<span style="color:var(--code-kw)">import</span> Navigation <span style="color:var(--code-kw)">from</span> <span style="color:var(--code-str)">"./Navigation"</span>;
+<span style="color:var(--code-kw)">import</span> SupportChat <span style="color:var(--code-kw)">from</span> <span style="color:var(--code-str)">"./SupportChat"</span>;
+
+<span style="color:var(--code-kw)">export default function</span> <span style="color:var(--code-fn)">Dashboard</span>() {
+
+  <span style="color:var(--code-kw)">return</span> (
+    &lt;div className=<span style="color:var(--code-str)">"flex h-[600px] border rounded-lg overflow-hidden"</span>&gt;
+      &lt;div className=<span style="color:var(--code-str)">"w-64 border-r"</span>&gt;
+      &lt;/div&gt;
+      &lt;div className=<span style="color:var(--code-str)">"w-80 border-l"</span>&gt;
+        &lt;SupportChat /&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  );
+}</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== TESTIMONIALS ========================== -->
+    <section class="quotes">
+      <div class="container">
+        <h2>The new way to build software.</h2>
+        <div class="quotes-grid">
+          <div class="quote-card">
+            <p>"It was night and day from one batch to another, adoption went from single digits to over 80%. It just spread like wildfire, all the best builders were using Bursor."</p>
+            <div class="quote-author"><span class="avatar"></span><span><span class="nm">Dana Hale</span><br><span class="rl">General Partner, Northwind</span></span></div>
+          </div>
+          <div class="quote-card">
+            <p>"My favorite enterprise AI service is Bursor. Every one of our engineers, some 40,000, are now assisted by AI and our productivity has gone up incredibly."</p>
+            <div class="quote-author"><span class="avatar"></span><span><span class="nm">Jamie Holt</span><br><span class="rl">President &amp; CEO, INVDA</span></span></div>
+          </div>
+          <div class="quote-card">
+            <p>"The best LLM applications have an autonomy slider: you control how much independence to give the AI. In Bursor, you can do Tab completion for targeted edits, or let it rip with the full agentic version."</p>
+            <div class="quote-author"><span class="avatar"></span><span><span class="nm">Avi Karan</span><br><span class="rl">CEO, Lumen Labs</span></span></div>
+          </div>
+          <div class="quote-card">
+            <p>"Bursor quickly grew from hundreds to thousands of extremely enthusiastic employees. We spend more on R&amp;D and software creation than any other undertaking, and there's significant economic value when making that process more efficient."</p>
+            <div class="quote-author"><span class="avatar"></span><span><span class="nm">Pat Coleman</span><br><span class="rl">Co-Founder &amp; CEO, Strial</span></span></div>
+          </div>
+          <div class="quote-card">
+            <p>"The most useful AI tool that I currently pay for, hands down, is Bursor. It's fast, autocompletes when and where you need it to, handles brackets properly, sensible keyboard shortcuts, bring-your-own-model… everything is well put together."</p>
+            <div class="quote-author"><span class="avatar"></span><span><span class="nm">sherden</span><br><span class="rl">Creator of sherden/ui</span></span></div>
+          </div>
+          <div class="quote-card">
+            <p>"It's definitely becoming more fun to be a programmer. We are at the 1% of what's possible, and it's in interactive experiences like Bursor where the best models shine brightest."</p>
+            <div class="quote-author"><span class="avatar"></span><span><span class="nm">Greg Brennan</span><br><span class="rl">President, OpenML</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== FRONTIER ============================ -->
+    <section class="frontier">
+      <div class="container">
+        <h2>Stay on the frontier</h2>
+        <div class="frontier-grid">
+          <div class="frontier-card">
+            <h4>Use the best model for every task</h4>
+            <p>Choose between every cutting-edge model from OpenML, Anthropos, Gemia, xML, and Bursor.</p>
+            <a class="link-accent" href="#">Explore models <span class="arrow">&#8599;</span></a>
+            <div class="frontier-media">
+              <div class="modelpick">
+                <div class="ph">Ask Bursor to plan or build anything</div>
+                <div class="row"><span class="chip">&#8734; Agent &#9662;</span><span class="chip">GPT-5.5 &#9662;</span><span class="send" style="margin-left:auto;">&#8593;</span></div>
+              </div>
+              <div class="modelmenu">
+                <div><span>Auto</span><span class="s">Suggested</span></div>
+                <div><span>Builder 2.5</span></div>
+                <div class="sel"><span>GPT-5.5</span><span>&#10003;</span></div>
+                <div><span>Opus 4.8</span></div>
+                <div><span>Gemia 3.1 Pro</span></div>
+                <div><span>Grok 4.3</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="frontier-card">
+            <h4>Complete codebase understanding</h4>
+            <p>Bursor learns how your codebase works, no matter the scale or complexity.</p>
+            <a class="link-accent" href="#">Learn about codebase indexing <span class="arrow">&#8599;</span></a>
+            <div class="frontier-media">
+              <div class="searchmock">
+                <div class="bar">Where are these menu label colors defined?</div>
+                <div class="step"><b>Grepped</b> Choose a model</div>
+                <div class="step"><b>Searched</b> Where is the model picker UI implement…</div>
+                <div class="step"><b>Searched</b> How are model labels colored in the UI?</div>
+                <div class="step">Reading</div>
+              </div>
+            </div>
+          </div>
+          <div class="frontier-card">
+            <h4>Develop enduring software</h4>
+            <p>Trusted by over half of the Fortune 500 to accelerate development, securely and at scale.</p>
+            <a class="link-accent" href="#">Explore enterprise <span class="arrow">&#8594;</span></a>
+            <div class="frontier-media dark">
+              <div class="codewall">
+                <div>function buildIndex(files) {</div>
+                <div>&nbsp;&nbsp;const <span class="b">embeddings</span> = [];</div>
+                <div>&nbsp;&nbsp;for (const f of files) {</div>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;embeddings.push(embed(f));</div>
+                <div>&nbsp;&nbsp;}</div>
+                <div>&nbsp;&nbsp;return <span class="b">new</span> VectorStore(embeddings);</div>
+                <div>}</div>
+                <div>&nbsp;</div>
+                <div>async function query(q) {</div>
+                <div>&nbsp;&nbsp;const hits = await store.search(q);</div>
+                <div>&nbsp;&nbsp;return rank(hits).slice(0, 8);</div>
+                <div>}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== CHANGELOG =========================== -->
+    <section class="changelog">
+      <div class="container">
+        <h2>Changelog</h2>
+        <div class="changelog-grid">
+          <div class="cl-card">
+            <div class="top"><span class="date">Jun 29, 2026</span></div>
+            <div class="title">Bursor Mobile App for iOS</div>
+          </div>
+          <div class="cl-card">
+            <div class="top"><span class="ver">3.9</span><span class="date">Jun 22, 2026</span></div>
+            <div class="title">Customize Bursor</div>
+          </div>
+          <div class="cl-card">
+            <div class="top"><span class="ver">3.8</span><span class="date">Jun 18, 2026</span></div>
+            <div class="title">Improvements to Bursor Automations</div>
+          </div>
+          <div class="cl-card">
+            <div class="top"><span class="ver">3.7</span><span class="date">Jun 17, 2026</span></div>
+            <div class="title">Cloud Environment Setup and Cloud Subagents in Agents Window</div>
+          </div>
+        </div>
+        <a class="link-accent more" href="#">See what's new in Bursor <span class="arrow">&#8594;</span></a>
+      </div>
+    </section>
+
+    <!-- ========================= RESEARCH =========================== -->
+    <section class="research">
+      <div class="container">
+        <div class="research-grid">
+          <div class="research-copy">
+            <h3>Bursor is an applied research team focused on building the future of software development.</h3>
+            <a class="link-accent" href="#">Join us <span class="arrow">&#8594;</span></a>
+          </div>
+          <div class="research-media"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== HIGHLIGHTS ========================== -->
+    <section class="highlights">
+      <div class="container">
+        <h2>Recent highlights</h2>
+        <div class="hl-grid">
+          <div class="hl-card">
+            <div class="kicker">Mar 27, 2026 · Research</div>
+            <div class="title">A technical report on Builder 2</div>
+            <div class="by"><span class="avatar"></span> Sasha Roone · 3 min read</div>
+          </div>
+          <div class="hl-card">
+            <div class="kicker">May 18, 2026 · Research</div>
+            <div class="title">Introducing Builder 2.5</div>
+            <div class="by"><span class="avatar"></span> Bursor Team · 7 min read</div>
+          </div>
+          <div class="hl-card">
+            <div class="kicker">Apr 2, 2026 · Product</div>
+            <div class="title">Meet the new Bursor</div>
+            <div class="by"><span class="avatar"></span> Micah &amp; Suri · 10 min read</div>
+          </div>
+          <div class="hl-card">
+            <div class="kicker">Apr 29, 2026 · Product</div>
+            <div class="title">Build programmatic agents with the Bursor SDK</div>
+            <div class="by"><span class="avatar"></span> Rohan Sadik · 6 min read</div>
+          </div>
+        </div>
+        <a class="link-accent more" href="#">View all blog posts <span class="arrow">&#8594;</span></a>
+      </div>
+    </section>
+
+    <!-- ========================= TRY NOW ============================ -->
+    <section class="trynow">
+      <div class="container">
+        <h2>Try Bursor now.</h2>
+        <div class="actions">
+          <a class="btn btn--dark btn--lg" href="#">Download for Linux <span class="arrow">&#8595;</span></a>
+          <a class="btn btn--soft btn--lg" href="#">Contact Sales <span class="arrow">&#8594;</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================== FOOTER ============================ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h5>Product</h5>
+          <a href="#">Agents</a><a href="#">Teams</a><a href="#">Enterprise</a>
+          <a href="#">Pricing</a><a href="#">Code Review</a><a href="#">Tab</a>
+          <a href="#">CLI</a><a href="#">Cloud Agents</a><a href="#">Marketplace &#8599;</a>
+        </div>
+        <div class="footer-col">
+          <h5>Resources</h5>
+          <a href="#">Download</a><a href="#">Changelog</a><a href="#">Docs</a>
+          <a href="#">Learn &#8599;</a><a href="#">Forum &#8599;</a><a href="#">Help &#8599;</a>
+          <a href="#">Workshops</a><a href="#">Status &#8599;</a>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <a href="#">Careers</a><a href="#">Blog</a><a href="#">Community</a>
+          <a href="#">Students</a><a href="#">Brand</a><a href="#">Future</a>
+          <a href="#">Bursphere &#8599;</a>
+        </div>
+        <div class="footer-col">
+          <h5>Legal</h5>
+          <a href="#">Terms of Service</a><a href="#">Privacy Policy</a>
+          <a href="#">Data Use</a><a href="#">Security</a>
+        </div>
+        <div class="footer-col">
+          <h5>Connect</h5>
+          <a href="#">X &#8599;</a><a href="#">LinkedIn &#8599;</a><a href="#">YouTube &#8599;</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Bursphere, Inc.</span>
+        <span>&#9737; SOC 2 Certified</span>
+        <span class="spacer"></span>
+        <span class="seg"><i>&#9707;</i><i>&#9728;</i><i>&#9789;</i></span>
+        <span class="lang">&#127760; English &#9662;</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
